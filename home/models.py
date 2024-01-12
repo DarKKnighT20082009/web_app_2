@@ -14,3 +14,15 @@ class Vazifa(models.Model):
     class Meta:
         verbose_name = 'Vazifa'
         verbose_name_plural = 'Vazifalar'
+
+
+class User(models.Model):
+    name = models.CharField(max_length=50, null=False)
+    surname = models.CharField(max_length=50, null=False)
+    gender = models.CharField(max_length=10 ,null=False)
+    hobby = models.CharField(max_length=100, null=False)
+    birthday = models.DateField(null=False)
+    age = models.IntegerField(null=False)
+
+    def __str__(self):
+        return f"{self.name} {self.surname}"

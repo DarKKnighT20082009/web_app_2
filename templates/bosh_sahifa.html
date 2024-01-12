@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitob do'koni</title>
+</head>
+<body>
+
+    <h1>Kitob bozori haqida</h1>
+
+
+    {% for vazifa in vazifalar %}
+
+    <h1>{{ vazifa.nomi }}</h1>
+    <h2>{{ vazifa.tavsif }}</h2>
+
+    {% endfor %}
+
+
+
+</body>
+</html>
